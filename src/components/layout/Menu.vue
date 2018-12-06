@@ -4,6 +4,10 @@
     :collapse="isCollapse"
     :router="true"
     :default-active="$route.path"
+    background-color="#545c64"
+    text-color="#fff"
+    active-text-color="#ffd04b"
+    :unique-opened="true"
   >
     <el-submenu index="1">
       <template slot="title">
@@ -22,11 +26,21 @@
         <span slot="title">选项4</span>
         <el-menu-item index="/opt41">选项1</el-menu-item>
       </el-submenu>
+      <el-menu-item-group>
+        <el-menu-item index="/opt5">选项5</el-menu-item>
+      </el-menu-item-group>
     </el-submenu>
-    <el-menu-item index="2">
-      <i class="el-icon-menu"></i>
-      <span slot="title">导航二</span>
-    </el-menu-item>
+    <el-submenu index="2">
+      <template slot="title">
+          <i class="el-icon-menu"></i>
+          <span slot="title">导航二</span>
+      </template>
+      <el-menu-item-group>
+          <el-menu-item index="/opt21">选项2-1</el-menu-item>
+          <el-menu-item index="/opt22">选项2-2</el-menu-item>
+      </el-menu-item-group>
+    </el-submenu>
+
     <el-menu-item index="3">
       <i class="el-icon-document"></i>
       <span slot="title">导航三</span>

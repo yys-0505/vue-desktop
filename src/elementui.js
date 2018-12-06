@@ -13,7 +13,9 @@ import {
   MenuItem,
   MenuItemGroup,
   Breadcrumb,
-  BreadcrumbItem
+  BreadcrumbItem,
+  Table,
+  TableColumn
 } from 'element-ui'
 
 Vue.use(Button)
@@ -30,3 +32,5 @@ Vue.use(MenuItem)
 Vue.use(MenuItemGroup)
 Vue.use(Breadcrumb)
 Vue.use(BreadcrumbItem)
+Vue.use(Table)
+Vue.use(TableColumn)
