@@ -10,8 +10,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="stylus" rel="stylesheet/stylus" scoped>
 #app {
   height: 100%
+  padding: 5px
+  box-sizing: border-box
 }
 </style>

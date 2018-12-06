@@ -62,6 +62,40 @@ const router = new Router({
               }
             }
           ]
+        },
+        {
+          path: '/opt5',
+          component: resolve => require(['components/Option15'], resolve),
+          meta: {
+            breadcrumbName: '选项五',
+            keepAlive: true
+          }
+        }
+      ]
+    },
+    {
+      path: '/home',
+      component: resolve => require(['components/Home'], resolve),
+      meta: {
+        breadcrumbName: '导航二',
+        keepAlive: true
+      },
+      children: [
+        {
+          path: '/opt21',
+          component: resolve => require(['components/Option21'], resolve),
+          meta: {
+            keepAlive: true,
+            breadcrumbName: '选项一'
+          }
+        },
+        {
+          path: '/opt22',
+          component: resolve => require(['components/Option22'], resolve),
+          meta: {
+            keepAlive: true,
+            breadcrumbName: '选项二'
+          }
         }
       ]
     },

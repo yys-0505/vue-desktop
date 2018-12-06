@@ -15,8 +15,8 @@ export default {
 </script>
 <style scoped lang="stylus" rel="stylesheet/stylus">
 .el-header
-  background-color: #B3C0D1
-  color: #333
+  background: #3a6785;
+  color: #fff;
   text-align: left
   line-height: 70px
   font-size: 22px

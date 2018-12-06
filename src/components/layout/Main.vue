@@ -1,10 +1,12 @@
 <template>
   <el-main>
     <Breadcrumb></Breadcrumb>
-    <keep-alive>
-      <router-view v-if="$route.meta.keepAlive"></router-view>
-    </keep-alive>
-    <router-view v-if="!$route.meta.keepAlive"></router-view>
+    <div class="main-section">
+      <keep-alive>
+        <router-view v-if="$route.meta.keepAlive"></router-view>
+      </keep-alive>
+      <router-view v-if="!$route.meta.keepAlive"></router-view>
+    </div>
   </el-main>
 </template>
 <script>
@@ -19,5 +21,8 @@ export default {
 .el-main
   background-color: #E9EEF3
   color: #333
-  text-align: center
+  display: flex
+  flex-direction: column
+  .main-section
+    flex: 1
 </style>
