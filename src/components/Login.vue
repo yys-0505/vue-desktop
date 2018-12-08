@@ -55,10 +55,13 @@ export default {
             name: this.ruleForm2.name,
             pass: this.ruleForm2.pass
           }
-          this.$axios.post('/api/login', params).then(res => {
-            setData('username', 'admin')
-            this.$router.push({path: '/home'})
-          })
+          console.log(params)
+          setData('username', 'admin')
+          this.$router.push({path: '/home'})
+          // this.$axios.post('/api/login', params).then(res => {
+          //   setData('username', 'admin')
+          //   this.$router.push({path: '/home'})
+          // })
         } else {
           console.log('error submit!!')
           return false
